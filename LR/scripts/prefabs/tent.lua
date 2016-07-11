@@ -10,6 +10,33 @@ local siestahut_assets =
     Asset("ANIM", "anim/siesta_canopy.zip"),
 }
 
+-----------------------------------------------------------------------
+--For regular tents
+
+local function PlaySleepLoopSoundTask(inst, stopfn)
+    inst.SoundEmitter:PlaySound("dontstarve/common/tent_sleep")
+end
+
+local function stopsleepsound(inst)
+    if inst.sleep_tasks ~= nil then
+        for i, v in ipairs(inst.sleep_tasks) do
+            v:Cancel()
+        end
+        inst.sleep_tasks = nil
+    end
+end
+
+local function startsleepsound(inst, len)
+    stopsleepsound(inst)
+    inst.sleep_tasks =
+    {
+        inst:DoPeriodicTask(len, PlaySleepLoopSoundTask, 33 * FRAMES),
+        inst:DoPeriodicTask(len, PlaySleepLoopSoundTask, 47 * FRAMES),
+    }
+end
+
+-----------------------------------------------------------------------
+
 local function onhammered(inst, worker)
     if inst.components.burnable ~= nil and inst.components.burnable:IsBurning() then
         inst.components.burnable:Extinguish()
@@ -23,6 +50,7 @@ end
 
 local function onhit(inst, worker)
     if not inst:HasTag("burnt") then
+        stopsleepsound(inst)
         inst.AnimState:PlayAnimation("hit")
         inst.AnimState:PushAnimation("idle", true)
     end
@@ -37,6 +65,7 @@ end
 
 local function onfinished(inst)
     if not inst:HasTag("burnt") then
+        stopsleepsound(inst)
         inst.AnimState:PlayAnimation("destroy")
         inst:ListenForEvent("animover", inst.Remove)
         inst.SoundEmitter:PlaySound("dontstarve/common/tent_dis_pre")
@@ -45,9 +74,16 @@ local function onfinished(inst)
     end
 end
 
-local function onbuilt(inst)
+local function onbuilt_tent(inst)
     inst.AnimState:PlayAnimation("place")
     inst.AnimState:PushAnimation("idle", true)
+    inst.SoundEmitter:PlaySound("dontstarve/common/tent_craft")
+end
+
+local function onbuilt_siestahut(inst)
+    inst.AnimState:PlayAnimation("place")
+    inst.AnimState:PushAnimation("idle", true)
+    inst.SoundEmitter:PlaySound("dontstarve/common/lean_to_craft")
 end
 
 local function onignite(inst)
@@ -62,10 +98,12 @@ local function wakeuptest(inst, phase)
     end
 end
 
-local function wakeuptestnoc(inst, phase)
-    if phase ~= "day" then
+local function wakeuptestnoc(inst, phase)	
+    if phase ~= "night" and inst.sleep_phase ~= "day" then
         inst.components.sleepingbag:DoWakeUp()
-    end
+    elseif phase ~= "day" and inst.sleep_phase ~= "night" then
+        inst.components.sleepingbag:DoWakeUp()
+	end
 end
 
 local function onwake(inst, sleeper, nostatechange)
@@ -74,11 +112,7 @@ local function onwake(inst, sleeper, nostatechange)
         inst.sleeptask = nil
     end
 
-    if sleeper:HasTag("player") and sleeper:HasTag("nocturn") then
-		inst:StopWatchingWorldState("phase", wakeuptestnoc)
-	else
-		inst:StopWatchingWorldState("phase", wakeuptest)
-	end
+    inst:StopWatchingWorldState("phase", wakeuptest)
     sleeper:RemoveEventCallback("onignite", onignite, inst)
 
     if not nostatechange then
@@ -90,6 +124,7 @@ local function onwake(inst, sleeper, nostatechange)
 
     if inst.sleep_anim ~= nil then
         inst.AnimState:PushAnimation("idle", true)
+        stopsleepsound(inst)
     end
 
     inst.components.finiteuses:Use()
@@ -127,8 +162,7 @@ local function onsleeptick(inst, sleeper)
 end
 
 local function onsleep(inst, sleeper)
-
-	if sleeper:HasTag("player") and sleeper:HasTag("nocturn") then
+    if sleeper:HasTag("player") and sleeper:HasTag("nocturn") then
 		inst:WatchWorldState("phase", wakeuptestnoc)
 	else
 		inst:WatchWorldState("phase", wakeuptest)
@@ -137,6 +171,7 @@ local function onsleep(inst, sleeper)
 
     if inst.sleep_anim ~= nil then
         inst.AnimState:PlayAnimation(inst.sleep_anim, true)
+        startsleepsound(inst, inst.AnimState:GetCurrentAnimationLength())
     end
 
     if inst.sleeptask ~= nil then
@@ -157,7 +192,7 @@ local function onload(inst, data)
     end
 end
 
-local function common_fn(bank, build, icon, tag)
+local function common_fn(bank, build, icon, tag, onbuiltfn)
     local inst = CreateEntity()
 
     inst.entity:AddTransform()
@@ -207,7 +242,7 @@ local function common_fn(bank, build, icon, tag)
     inst.components.sleepingbag.dryingrate = math.max(0, -TUNING.SLEEP_WETNESS_PER_TICK / TUNING.SLEEP_TICK_PERIOD)
 
     MakeSnowCovered(inst)
-    inst:ListenForEvent("onbuilt", onbuilt)
+    inst:ListenForEvent("onbuilt", onbuiltfn)
 
     MakeLargeBurnable(inst, nil, nil, true)
     MakeMediumPropagator(inst)
@@ -221,7 +256,7 @@ local function common_fn(bank, build, icon, tag)
 end
 
 local function tent()
-    local inst = common_fn("tent", "tent", "tent.png")
+    local inst = common_fn("tent", "tent", "tent.png", nil, onbuilt_tent)
 
     if not TheWorld.ismastersim then
         return inst
@@ -239,7 +274,7 @@ local function tent()
 end
 
 local function siestahut()
-    local inst = common_fn("siesta_canopy", "siesta_canopy", "siestahut.png", "siestahut")
+    local inst = common_fn("siesta_canopy", "siesta_canopy", "siestahut.png", "siestahut", onbuilt_siestahut)
 
     if not TheWorld.ismastersim then
         return inst
@@ -256,7 +291,7 @@ local function siestahut()
     return inst
 end
 
-return Prefab("common/objects/tent", tent, tent_assets),
-    MakePlacer("common/tent_placer", "tent", "tent", "idle"),
-    Prefab("common/objects/siestahut", siestahut, siestahut_assets),
-    MakePlacer("common/siestahut_placer", "siesta_canopy", "siesta_canopy", "idle")
+return Prefab("tent", tent, tent_assets),
+    MakePlacer("tent_placer", "tent", "tent", "idle"),
+    Prefab("siestahut", siestahut, siestahut_assets),
+    MakePlacer("siestahut_placer", "siesta_canopy", "siesta_canopy", "idle")
