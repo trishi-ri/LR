@@ -61,12 +61,12 @@ local function onhealthchange(inst)
 	--local delta = 1
 	local cur_health = 1
 	cur_health = inst.components.health:GetPercent()
-	if cur_health == 1 then
-		inst.components.combat.damagemultiplier = .75
-	elseif cur_health >= .5 then
-		inst.components.combat.damagemultiplier = 2-cur_health
-	elseif cur_health < .5 then
-		inst.components.combat.damagemultiplier = 3-cur_health
+	if cur_health == 1 then --при полном здоровье
+		inst.components.combat.damagemultiplier = .75 --множитель урона = 0.75
+	elseif cur_health >= .5 then --при неполном здоровье выше или равной половине
+		inst.components.combat.damagemultiplier = 2-cur_health --множитель урона = 2-(от .99 до .5) = от 1.01 до 1.5
+	elseif cur_health < .5 then --при неполном здоровье меньше половины
+		inst.components.combat.damagemultiplier = 3-cur_health --множитель урона = 3-(от 0.5 до 0) = от 2.5 до 3
 	end
 	--print (string.format("damagemultiplier: %2.2f", inst.components.combat.damagemultiplier))
     
@@ -95,21 +95,22 @@ end
 -- This initializes for the host only
 local function master_postinit(inst)
 	
-	inst.components.locomotor.walkspeed = (TUNING.WILSON_WALK_SPEED)
-	inst.components.locomotor.runspeed = (TUNING.WILSON_RUN_SPEED)
+	inst.components.locomotor.walkspeed = (TUNING.WILSON_WALK_SPEED) --скорость ходьбы = 4(как у Вилсона)
+	inst.components.locomotor.runspeed = (TUNING.WILSON_RUN_SPEED)  --скорость бега = 6(как у Вилсона)
 	
 	-- Stats	
-	inst.components.health:SetMaxHealth(TUNING.WILSON_HEALTH * .75)
+	inst.components.health:SetMaxHealth(TUNING.WILSON_HEALTH * .75) --здоровье = 112.5 (3/4 от показателя Вилсона) 
 	
-	inst.components.hunger:SetMax(TUNING.WILSON_HUNGER)
-	inst.components.hunger:SetRate(TUNING.WILSON_HUNGER_RATE * .75)
+	inst.components.hunger:SetMax(TUNING.WILSON_HUNGER) --сытость = 150 (как у Вилсона) 
+	inst.components.hunger:SetRate(TUNING.WILSON_HUNGER_RATE * .75) --падение сытости = 0.15625*.75 = 0.1171875(3/4 от показателя Вилсона) 
 	
-	inst.components.sanity:SetMax(TUNING.WILSON_SANITY)
-	inst.components.sanity.night_drain_mult = .5
-	inst.components.sanity.neg_aura_mult = 0
-	inst.components.sanity.ghost_drain_mult = 0
-	
-	inst.components.freezable:SetResistance(1)
+	inst.components.sanity:SetMax(TUNING.WILSON_SANITY) --рассудок = 200 (как у Вилсона) 
+	inst.components.sanity.night_drain_mult = .5 --рассудок night_drain_mult = 0.5 (1/2 от показателя Вилсона) 
+
+	inst.components.sanity.neg_aura_mult = 0 --рассудок neg_aura_mult = 0 
+	inst.components.sanity.ghost_drain_mult = 0 --рассудок ghost_drain_mult = 0 
+
+	inst.components.freezable:SetResistance(.5)
 	
 	inst:ListenForEvent("healthdelta", onhealthchange)
 

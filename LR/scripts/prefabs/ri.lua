@@ -121,34 +121,34 @@ end
  --local tempCaveVar = false 
 
  -- Change movespeed at dusk and night
-local function updatestats(inst, phase)
+local function updatestats(inst)
 
-	if phase == "day" then
+	if TheWorld.state.phase == "day" then
 	
 		inst.Light:Enable(false)
 
 		inst.components.locomotor.walkspeed = (TUNING.WILSON_WALK_SPEED * .6)
 		inst.components.locomotor.runspeed = (TUNING.WILSON_RUN_SPEED * .6)
 		
-		inst.components.sanity.dapperness = (TUNING.DAPPERNESS_SMALL * -8)
+		inst.components.sanity.dapperness = (TUNING.DAPPERNESS_MED * -1)
 		
 		inst.components.combat.damagemultiplier = 1
 	   
-	elseif phase == "dusk" then
+	elseif TheWorld.state.phase == "dusk" then
 
 		inst.components.locomotor.walkspeed = (TUNING.WILSON_WALK_SPEED * 1.2)
 		inst.components.locomotor.runspeed = (TUNING.WILSON_RUN_SPEED * 1.2)
 		
-		inst.components.sanity.dapperness = (TUNING.DAPPERNESS_SMALL * 8)
+		inst.components.sanity.dapperness = (TUNING.DAPPERNESS_LARGE)
 		
 		inst.components.combat.damagemultiplier = 2
 
-	elseif phase == "night" then
+	elseif TheWorld.state.phase == "night" then
 
 		inst.components.locomotor.walkspeed = (TUNING.WILSON_WALK_SPEED * 1)
 		inst.components.locomotor.runspeed = (TUNING.WILSON_RUN_SPEED * 1)
 		
-		inst.components.sanity.dapperness = (TUNING.DAPPERNESS_SMALL * 5)
+		inst.components.sanity.dapperness = (TUNING.DAPPERNESS_MED_LARGE)
 
 		inst.components.combat.damagemultiplier = 2
 
@@ -189,8 +189,8 @@ local function master_postinit(inst)
 		
 	inst.components.hunger:SetRate(TUNING.WILSON_HUNGER_RATE * 2)
 	
-	inst.components.sanity.night_drain_mult = 1--TUNING.WENDY_SANITY_MULT
-	inst.components.sanity.custom_rate_fn = sanityfn
+	inst.components.sanity.night_drain_mult = (TUNING.WENDY_SANITY_MULT * -2)
+	--inst.components.sanity.custom_rate_fn = sanityfn
 	
 	inst:WatchWorldState("phase", updatestats)
     updatestats(inst)
