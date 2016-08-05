@@ -88,8 +88,8 @@ RemapSoundEvent( "dontstarve/characters/wisp/talk_LP", "wisp/wisp/talk_LP" )
 			Ingredient("nightmarefuel", 4)
 		},
 		RECIPETABS.MAGIC, TECH.NONE, nil, nil, nil, nil, 'llorar_flower_owner', "images/inventoryimages/llorar_flower.xml")
-	STRINGS.NAMES.LLORAR_FLOWER = "Llorar's Flower"
-	STRINGS.CHARACTERS.GENERIC.DESCRIBE.LLORAR_FLOWER = "Llorar's Flower"
+	STRINGS.NAMES.LLORAR_FLOWER = "Flower of Hope"
+	STRINGS.CHARACTERS.GENERIC.DESCRIBE.LLORAR_FLOWER = "Flower of Hope"
 	STRINGS.RECIPE_DESC.LLORAR_FLOWER = "The last hope."
 
 ------------------------------------------------

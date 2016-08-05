@@ -50,7 +50,7 @@ local function fn()
 
 	inst.AnimState:SetBank("llorar_flower")
     inst.AnimState:SetBuild("llorar_flower")
-    inst.AnimState:PlayAnimation("idle_1")
+    inst.AnimState:PlayAnimation("idle_2")
 
     MakeInventoryPhysics(inst)
 

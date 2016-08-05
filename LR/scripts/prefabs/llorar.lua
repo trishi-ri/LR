@@ -110,7 +110,42 @@ local function master_postinit(inst)
 	inst.components.sanity.neg_aura_mult = 0 --рассудок neg_aura_mult = 0 
 	inst.components.sanity.ghost_drain_mult = 0 --рассудок ghost_drain_mult = 0 
 
-	inst.components.freezable:SetResistance(.5)
+	--inst.components.freezable:SetResistance(-5)
+	
+	if TheWorld.state.iswinter then	
+		inst.components.temperature.maxtemp = ( 25 )
+		inst.components.temperature.hurtrate = ( 2.5 )
+	end
+	
+	inst:WatchWorldState("startwinter", function() -- Announce Winter starting, set max temp and damage rate
+		if inst.components.talker then
+			inst.components.talker:Say(GetString(inst, "ANNOUNCE_WINTER"))
+			inst.components.temperature.maxtemp = ( 25 )
+			inst.components.temperature.hurtrate = ( 2.5 )
+		end
+	end)
+
+	inst:WatchWorldState("startspring", function() -- Announce Winter ending, set max temp and damage rate
+		if inst.components.talker then
+			inst.components.talker:Say(GetString(inst, "ANNOUNCE_SPRING"))
+			inst.components.temperature.maxtemp = ( 90 )
+			inst.components.temperature.hurtrate = ( 1.25 )
+		end
+	end)
+	
+	inst:WatchWorldState("startsummer", function() -- Set max temp and damage rate
+		if inst.components.talker then
+		inst.components.temperature.maxtemp = ( 90 )
+		inst.components.temperature.hurtrate = ( 1.25 )
+		end
+	end)
+	
+	inst:WatchWorldState("startautumn", function() -- Set max temp and damage rate
+		if inst.components.talker then
+		inst.components.temperature.maxtemp = ( 90 )
+		inst.components.temperature.hurtrate = ( 1.25 )
+		end
+	end)
 	
 	inst:ListenForEvent("healthdelta", onhealthchange)
 
