@@ -119,7 +119,6 @@ local function master_postinit(inst)
 	
 	inst:WatchWorldState("startwinter", function() -- Announce Winter starting, set max temp and damage rate
 		if inst.components.talker then
-			inst.components.talker:Say(GetString(inst, "ANNOUNCE_WINTER"))
 			inst.components.temperature.maxtemp = ( 25 )
 			inst.components.temperature.hurtrate = ( 2.5 )
 		end
@@ -127,7 +126,6 @@ local function master_postinit(inst)
 
 	inst:WatchWorldState("startspring", function() -- Announce Winter ending, set max temp and damage rate
 		if inst.components.talker then
-			inst.components.talker:Say(GetString(inst, "ANNOUNCE_SPRING"))
 			inst.components.temperature.maxtemp = ( 90 )
 			inst.components.temperature.hurtrate = ( 1.25 )
 		end
