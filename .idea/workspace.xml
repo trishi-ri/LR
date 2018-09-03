@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2517c165-8995-4925-84be-324c0686ca69" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/LR.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/curcu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/description" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/images/map_icons/ri.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/images/saveslot_portraits/ri.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/images/selectscreen_portraits/ri.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/images/selectscreen_portraits/ri_silho.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/scripts/prefabs/llorar_none.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/scripts/prefabs/ri_none.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/bigportraits/llorar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/bigportraits/ri.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/images/avatars/avatar_ghost_llorar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/images/avatars/avatar_ghost_ri.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/images/avatars/avatar_llorar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/images/avatars/avatar_ri.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/images/avatars/self_inspect_llorar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/images/avatars/self_inspect_ri.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/images/inventoryimages/inventoryimages_llorar_flower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/images/inventoryimages/llorar_flower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/images/inventoryimages/llorar_flower_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/images/map_icons/llorar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/images/map_icons/ri.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/images/saveslot_portraits/llorar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/images/saveslot_portraits/ri.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/images/selectscreen_portraits/llorar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/images/selectscreen_portraits/llorar_silho.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/images/selectscreen_portraits/ri.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/images/selectscreen_portraits/ri_silho.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/modicon_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/modicon_l.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/sources/modicon_r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR/todo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/bigportraits/llorar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/bigportraits/ri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/bigportraits/ri.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LR/bigportraits/ri.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/images/avatars/avatar_ghost_llorar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/images/avatars/avatar_llorar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/images/avatars/avatar_ri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/images/avatars/self_inspect_llorar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/images/avatars/self_inspect_ri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/images/inventoryimages/inventoryimages_llorar_flower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/images/inventoryimages/llorar_flower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/images/inventoryimages/llorar_flower_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/images/map_icons/llorar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/images/map_icons/ri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/images/saveslot_portraits/llorar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/images/saveslot_portraits/ri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/images/selectscreen_portraits/llorar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/images/selectscreen_portraits/llorar_silho.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/images/selectscreen_portraits/ri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/images/selectscreen_portraits/ri_silho.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/modicon_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/modicon_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/modicon_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/modinfo.lua" beforeDir="false" afterPath="$PROJECT_DIR$/LR/modinfo.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/modmain.lua" beforeDir="false" afterPath="$PROJECT_DIR$/LR/modmain.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/scripts/prefabs/bedroll.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/scripts/prefabs/bedroll_clear.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/scripts/prefabs/llorar.lua" beforeDir="false" afterPath="$PROJECT_DIR$/LR/scripts/prefabs/llorar.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/scripts/prefabs/ri.lua" beforeDir="false" afterPath="$PROJECT_DIR$/LR/scripts/prefabs/ri.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/scripts/prefabs/tent.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/scripts/prefabs/tent_clear.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/scripts/stategraphs/SGwilson.lua" beforeDir="false" afterPath="$PROJECT_DIR$/LR/scripts/stategraphs/SGwilson.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR/scripts/stategraphs/SGwilson_clear.lua" beforeDir="false" afterPath="$PROJECT_DIR$/LR/scripts/stategraphs/SGwilson_clear.lua" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="352751779">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.checkout.remote" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="lua" value="4" />
+          <entry key="ts" value="2" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Scratch" value="2" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.file.types.edit" />
+    </session>
+    <session id="-1558810965">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.24" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="description" value="1" />
+          <entry key="jpg" value="1" />
+          <entry key="lua" value="76" />
+          <entry key="png" value="14" />
+          <entry key="scml" value="1" />
+          <entry key="txt" value="4" />
+          <entry key="xml" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Image" value="15" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="XML" value="10" />
+          <entry key="lua" value="76" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="description" value="652" />
+          <entry key="dummy" value="1" />
+          <entry key="lua" value="511" />
+          <entry key="txt" value="1186" />
+          <entry key="xml" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="1839" />
+          <entry key="XML" value="8" />
+          <entry key="lua" value="511" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="git LR" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="NewLua" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sanityfn</find>
+      <find>llorar_none</find>
+      <find>name = &quot;bedroll&quot;,</find>
+      <find>name = &quot;bedroll&quot;</find>
+      <find>TheWorld.state.isday</find>
+      <find>MakeHauntableLaunch</find>
+      <find>nocturn</find>
+      <find>\-\-local homePos \= inst\.components\.knownlocations\:GetLocation\(\&quot;home\&quot;\)\n    \-\-return homePos \~\= nil and inst\:GetDistanceSqToPoint\(homePos\) \&lt; 25\-\-5 \* 5</find>
+      <find>cavedweller</find>
+      <find>nightvision</find>
+      <find>ForceNightVision</find>
+      <find>NIGHTVISION_COLOURCUBES</find>
+      <find>playervision</find>
+      <find>SetNocturnal</find>
+      <find>NocturnalSleepTest</find>
+      <find>stategraphs</find>
+      <find>StandardSleepChecks</find>
+      <find>inst.components.sleeper:</find>
+      <find>inst.components.hunger</find>
+      <find>iscaveday</find>
+      <find>iscavenight</find>
+      <find>HUNGER_RATE</find>
+      <find>wakeuptest</find>
+      <find>sleep_phase</find>
+      <find>sleep</find>
+      <find>bedroll</find>
+      <find>cavenight</find>
+      <find>inst.components.sanity.dapperness</find>
+      <find>light\:SetIntensity\(\.3\)\n    light\:SetRadius\(6\)\n    light\:SetFalloff\(1\)\n    light\:Enable\(false\)\n    light\:SetColour\(0 \/ 255\, 150 \/ 255\, 130 \/ 255\)\n</find>
+      <find>light:</find>
+    </findStrings>
+    <dirStrings>
+      <dir>E:\Programs\Steam\steamapps\common\Don't Starve Together\data\databundles\scripts</dir>
+      <dir>E:\Programs\Steam\steamapps\common\Don't Starve Together\data\databundles\scripts\prefabs</dir>
+      <dir>E:\Programs\Steam\steamapps\common\Don't Starve Together\data\databundles\scripts\components</dir>
+      <dir>E:\projects\DST modding\DST_data_unzip\scripts\stategraphs</dir>
+      <dir>E:\projects\DST modding\DST_data_unzip\scripts\prefabs</dir>
+      <dir>E:\projects\DST modding\DST_data_unzip\scripts\components</dir>
+      <dir>E:\Programs\Steam\steamapps\common\Don't Starve Together\mods</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="E:/Programs/Steam/steamapps/common/Don't Starve Together/mods/modsettings.lua" />
+        <option value="E:/Programs/Steam/steamapps/common/Don't Starve Together/mods/LR/images/avatars/self_inspect_ri.xml" />
+        <option value="E:/Programs/Steam/steamapps/common/Don't Starve Together/mods/LR/modinfo.lua" />
+        <option value="$PROJECT_DIR$/LR/scripts/prefabs/ri_none.lua" />
+        <option value="$PROJECT_DIR$/LR/bigportraits/ri.xml" />
+        <option value="$PROJECT_DIR$/LR/bigportraits/llorar.xml" />
+        <option value="$PROJECT_DIR$/LR/scripts/prefabs/llorar_none.lua" />
+        <option value="$PROJECT_DIR$/LR/scripts/prefabs/llorar.lua" />
+        <option value="$PROJECT_DIR$/LR/modmain.lua" />
+        <option value="$PROJECT_DIR$/LR/scripts/stategraphs/SGwilson_clear.lua" />
+        <option value="$PROJECT_DIR$/LR/scripts/stategraphs/SGwilson_new.lua" />
+        <option value="$PROJECT_DIR$/LR/scripts/prefabs/llorar_flower.lua" />
+        <option value="$PROJECT_DIR$/LR/scripts/prefabs/bedroll.lua" />
+        <option value="$PROJECT_DIR$/LR/todo.txt" />
+        <option value="$PROJECT_DIR$/LR/scripts/prefabs/ri.lua" />
+        <option value="$PROJECT_DIR$/LR/modinfo.lua" />
+        <option value="$PROJECT_DIR$/LR/description" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="1292" />
+    <option name="height" value="1010" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="git LR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="git LR" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="git LR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="git LR" type="462c0819:PsiDirectoryNode" />
+              <item name="LR" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="git LR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="git LR" type="462c0819:PsiDirectoryNode" />
+              <item name="LR" type="462c0819:PsiDirectoryNode" />
+              <item name="bigportraits" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="git LR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="git LR" type="462c0819:PsiDirectoryNode" />
+              <item name="LR" type="462c0819:PsiDirectoryNode" />
+              <item name="exported" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="git LR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="git LR" type="462c0819:PsiDirectoryNode" />
+              <item name="LR" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="git LR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="git LR" type="462c0819:PsiDirectoryNode" />
+              <item name="LR" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="avatars" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="git LR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="git LR" type="462c0819:PsiDirectoryNode" />
+              <item name="LR" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="git LR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="git LR" type="462c0819:PsiDirectoryNode" />
+              <item name="LR" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="prefabs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="git LR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="git LR" type="462c0819:PsiDirectoryNode" />
+              <item name="LR" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="stategraphs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="git LR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="git LR" type="462c0819:PsiDirectoryNode" />
+              <item name="LR" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/LR" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/LR/scripts/prefabs/tent.lua" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\projects\git LR\LR\scripts\prefabs" />
+      <recent name="E:\projects\DST modding\DST_data_unzip\scripts\prefabs" />
+      <recent name="E:\projects\git LR\LR\scripts\stategraphs" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2517c165-8995-4925-84be-324c0686ca69" name="Default Changelist" comment="" />
+      <created>1535214815064</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1535214815064</updated>
+      <workItem from="1535214817565" duration="2223000" />
+      <workItem from="1535217091518" duration="79000" />
+      <workItem from="1535217190108" duration="1213000" />
+      <workItem from="1535302583670" duration="4342000" />
+      <workItem from="1535366219186" duration="7000" />
+      <workItem from="1535642846353" duration="3882000" />
+      <workItem from="1535648552482" duration="2129000" />
+      <workItem from="1535712508985" duration="186000" />
+      <workItem from="1535954501959" duration="19041000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="33102000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49829352" visible="true" weight="0.24960254" />
+      <window_info id="Structure" order="1" sideWeight="0.5017065" side_tool="true" weight="0.24960254" />
+      <window_info id="Favorites" order="2" sideWeight="0.5017065" side_tool="true" weight="0.24960254" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32990867" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49920508" visible="true" weight="0.33105022" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32990867" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007949" side_tool="true" weight="0.32990867" />
+      <window_info anchor="bottom" id="LuaCheck" order="11" weight="0.32990867" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/LR/images/avatars/self_inspect_ri.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="144" selection-start-column="144" selection-end-column="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Programs/Steam/steamapps/common/Don't Starve Together/mods/LR/images/saveslot_portraits/ri.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://E:/Programs/Steam/steamapps/common/Don't Starve Together/mods/LR/images/avatars/self_inspect_ri.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://E:/Programs/Steam/steamapps/common/Don't Starve Together/mods/LR/modinfo.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Programs/Steam/steamapps/common/Don't Starve Together/mods/workshop-1459449824/scripts/prefabs/monnobak.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Programs/Steam/steamapps/common/Don't Starve Together/mods/workshop-1459449824/scripts/speech_monnobak.lua">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://E:/Programs/Steam/steamapps/common/Don't Starve Together/mods/workshop-1459449824/modinfo.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Programs/Steam/steamapps/common/Don't Starve Together/mods/workshop-1459449824/modmain.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="62" column="43" lean-forward="true" selection-start-line="62" selection-start-column="43" selection-end-line="62" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/images/saveslot_portraits/llorar.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/images/saveslot_portraits/ri.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://E:/Programs/Steam/steamapps/common/Don't Starve Together/data/images/saveslot_portraits.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://E:/Programs/Steam/steamapps/common/Don't Starve Together/mods/modsettings.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/bigportraits/ri.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/bigportraits/llorar.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="174" lean-forward="true" selection-start-column="174" selection-end-column="174" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/bigportraits/ri.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Programs/Steam/steamapps/common/Don't Starve Together/mods/workshop-1459449824/scripts/prefabs/monnobak_none.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Programs/Steam/steamapps/common/Don't Starve Together/mods/workshop-1491379778/modinfo.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Programs/Steam/steamapps/common/Don't Starve Together/mods/workshop-1491379778/scripts/prefabs/victor_none.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="25" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Programs/Steam/steamapps/common/Don't Starve Together/mods/workshop-1491379778/scripts/prefabs/victor.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1717">
+          <caret line="107" column="5" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/preview.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/modicon_r.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/modicon_l.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/modicon_2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/exported/llorar_flower/llorar_flower.scml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/images/inventoryimages/llorar_flower.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/images/avatars/avatar_ri.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/images/avatars/self_inspect_ri.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/images/avatars/self_inspect_llorar.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/images/avatars/avatar_ghost_ri.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/bigportraits/llorar.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/scripts/prefabs/llorar_none.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Programs/Steam/steamapps/common/Don't Starve Together/data/databundles/scripts/stategraphs/SGwilson.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/scripts/stategraphs/SGwilson.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="3853" column="33" selection-start-line="3853" selection-start-column="18" selection-end-line="3853" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/scripts/prefabs/llorar_flower.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="87" column="30" lean-forward="true" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Programs/Steam/steamapps/common/Don't Starve Together/data/databundles/scripts/prefabs/abigail_flower.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1306">
+          <caret line="320" column="28" selection-start-line="320" selection-start-column="24" selection-end-line="320" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/scripts/prefabs/ri_none.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/scripts/speech_ri.lua">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../DST modding/DST_data_unzip/scripts/prefabs/birds.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/scripts/stategraphs/SGwilson_clear.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="3852" column="17" lean-forward="true" selection-start-line="3852" selection-start-column="17" selection-end-line="3852" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/scripts/stategraphs/SGwilson.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="5045" lean-forward="true" selection-start-line="5045" selection-end-line="5045" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../DST modding/DST_data_unzip/scripts/prefabs/bedroll.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../DST modding/DST_data_unzip/scripts/prefabs/tent.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1751">
+          <caret line="94" column="38" lean-forward="true" selection-start-line="94" selection-start-column="38" selection-end-line="94" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/scripts/prefabs/bedroll_clear.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/scripts/prefabs/tent.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="95" column="32" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/scripts/prefabs/bedroll.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="14" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/scripts/prefabs/llorar.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="84" column="59" selection-start-line="84" selection-start-column="59" selection-end-line="84" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/scripts/prefabs/ri.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1235">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/modinfo.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/modmain.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="112" column="71" selection-start-line="112" selection-start-column="38" selection-end-line="112" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/description">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="52" column="31" lean-forward="true" selection-start-line="27" selection-end-line="52" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

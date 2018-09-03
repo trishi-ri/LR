@@ -1,0 +1,28 @@
+1. отсутствующие файлы (относительно последней версии дст):
+- images\names_llorar.tex, images\names_ri.tex (имя персонажа)
+- bigportraits\llorar_none.tex, bigportraits\llorar_none.xml,
+bigportraits\ri_none.tex, bigportraits\ri_none.xml - картинка персонажа, но без имени
+- saveslot_portraits - картинка для превью персонажа в списке игр (почему не работает? найти рабочий пример)
+- prefabs\llorar_none.lua, prefabs\ri_none.lua
+? картинка головы в предвыборе одежды для сервера
+2. проверить необходиость для всех этих функций:
+inst:ListenForEvent("ms_respawnedfromghost", onbecamehuman)
+inst:ListenForEvent("ms_becameghost", onbecameghost)
+3. что делают эти параметры?
+skip_item_gen = true,
+skip_giftable_gen = true,
+5. speech проверить, надо ли что обновить
+6.
+
+Ri
+- комфортный сон днём!
+- сделать для неё слишком светло днём, а ночью чтоб было норм?
+- картинка на выборе не светится как у остальных (нужен редактор картинок?)
+- насколько меньше размером?
+- "домик" для сна:
+    --local homePos = inst.components.knownlocations:GetLocation("home")
+    --return homePos ~= nil and inst:GetDistanceSqToPoint(homePos) < 25--5 * 5
+
+Llorar
+-
+E:\Programs\Steam\steamapps\common\Don't Starve Together\data\images

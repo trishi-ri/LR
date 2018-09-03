@@ -1,6 +1,6 @@
 <Atlas>
 	<Texture filename="ri.tex" />
 	<Elements>
-		<Element name="ri.tex" u1="0" u2="1" v1="0" v2="1" />
+		<Element name="ri.tex" u1="0.00048828125" u2="0.54638671875" v1="0.29736328125" v2="0.99951171875"/>
 	</Elements>
 </Atlas>

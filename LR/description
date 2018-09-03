@@ -1,0 +1,55 @@
+He is our Last Hope. She is just a red panda.
+
+He's name is Llorar.
+
+Health = 112.5 (3/4  WILSON)
+Hunger = 150 (WILSON)
+drain Hunger = (3/4 WILSON)
+Sanity = 200 (WILSON)
+Sanity night_drain_mult = 0.5 (1/2 WILSON)
+Sanity neg_aura_mult  = 0
+Sanity ghost_drain_mult = 0
+
+*He is dead.
+*He is a cat.
+
+She's name is Ri.
+
+Health = 100
+Hunger = 100
+Sanity = 100
+movement speed, drain hunger and sanity, damage multiplier change accordingly to phase of day
+her best time is dusk, her bad time is day
+
+*She is nocturnal and crepuscular.
+*She can sleep on day and she has night vision.
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+Он  - наша Последняя Надежда. Она - просто красная панда.
+
+Его зовут Ллорар.
+
+здоровье = 112.5 (3/4 от показателя Вилсона)
+сытость = 150 (как у Вилсона)
+падение сытости = (3/4 от показателя Вилсона)
+рассудок = 200 (как у Вилсона)
+рассудок night_drain_mult = 0.5 (1/2 от показателя Вилсона)
+рассудок neg_aura_mult  = 0
+рассудок ghost_drain_mult = 0
+
+* Он мёртв.
+* Он кот.
+
+Её зовут Ри.
+
+здоровье = 100
+сытость = 100
+рассудок = 100
+скорость, падение рассудка и сытости, множитель урона меняются в зависимости от времени суток
+сумерки - её лучшее время, а день - худшее
+может спать днём, видит ночью
+
+*Она сумеречная и ночная.
+*Может спать днём, видит ночью.
+
+
