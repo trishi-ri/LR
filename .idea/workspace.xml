@@ -1,76 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2517c165-8995-4925-84be-324c0686ca69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/LR.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/curcu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/description" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/images/map_icons/ri.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/images/saveslot_portraits/ri.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/images/selectscreen_portraits/ri.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/images/selectscreen_portraits/ri_silho.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/scripts/prefabs/llorar_none.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/scripts/prefabs/ri_none.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/bigportraits/llorar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/bigportraits/ri.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/images/avatars/avatar_ghost_llorar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/images/avatars/avatar_ghost_ri.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/images/avatars/avatar_llorar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/images/avatars/avatar_ri.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/images/avatars/self_inspect_llorar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/images/avatars/self_inspect_ri.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/images/inventoryimages/inventoryimages_llorar_flower.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/images/inventoryimages/llorar_flower.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/images/inventoryimages/llorar_flower_close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/images/map_icons/llorar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/images/map_icons/ri.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/images/saveslot_portraits/llorar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/images/saveslot_portraits/ri.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/images/selectscreen_portraits/llorar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/images/selectscreen_portraits/llorar_silho.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/images/selectscreen_portraits/ri.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/images/selectscreen_portraits/ri_silho.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/modicon_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/modicon_l.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/sources/modicon_r.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR/todo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/bigportraits/llorar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/bigportraits/ri.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/bigportraits/ri.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LR/bigportraits/ri.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/images/avatars/avatar_ghost_llorar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/images/avatars/avatar_llorar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/images/avatars/avatar_ri.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/images/avatars/self_inspect_llorar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/images/avatars/self_inspect_ri.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/images/inventoryimages/inventoryimages_llorar_flower.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/images/inventoryimages/llorar_flower.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/images/inventoryimages/llorar_flower_close.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/images/map_icons/llorar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/images/map_icons/ri.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/images/saveslot_portraits/llorar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/images/saveslot_portraits/ri.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/images/selectscreen_portraits/llorar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/images/selectscreen_portraits/llorar_silho.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/images/selectscreen_portraits/ri.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/images/selectscreen_portraits/ri_silho.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/modicon_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/modicon_l.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/modicon_r.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/modinfo.lua" beforeDir="false" afterPath="$PROJECT_DIR$/LR/modinfo.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/modmain.lua" beforeDir="false" afterPath="$PROJECT_DIR$/LR/modmain.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/scripts/prefabs/bedroll.lua" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/scripts/prefabs/bedroll_clear.lua" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/scripts/prefabs/llorar.lua" beforeDir="false" afterPath="$PROJECT_DIR$/LR/scripts/prefabs/llorar.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/scripts/prefabs/ri.lua" beforeDir="false" afterPath="$PROJECT_DIR$/LR/scripts/prefabs/ri.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/scripts/prefabs/tent.lua" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/scripts/prefabs/tent_clear.lua" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/scripts/stategraphs/SGwilson.lua" beforeDir="false" afterPath="$PROJECT_DIR$/LR/scripts/stategraphs/SGwilson.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR/scripts/stategraphs/SGwilson_clear.lua" beforeDir="false" afterPath="$PROJECT_DIR$/LR/scripts/stategraphs/SGwilson_clear.lua" afterDir="false" />
-    </list>
+    <list default="true" id="2517c165-8995-4925-84be-324c0686ca69" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -115,7 +46,8 @@
     <session id="-1558810965">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="1" />
@@ -123,7 +55,7 @@
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -168,7 +100,7 @@
     <favorites_list name="git LR" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -325,12 +257,6 @@
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
               <item name="stategraphs" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="git LR" type="b2602c69:ProjectViewProjectNode" />
-              <item name="git LR" type="462c0819:PsiDirectoryNode" />
-              <item name="LR" type="462c0819:PsiDirectoryNode" />
-              <item name="sources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -384,11 +310,12 @@
       <workItem from="1535648552482" duration="2129000" />
       <workItem from="1535712508985" duration="186000" />
       <workItem from="1535954501959" duration="19041000" />
+      <workItem from="1535977552315" duration="10000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33102000" />
+    <option name="totallyTimeSpent" value="33112000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -461,13 +388,7 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LR/images/avatars/self_inspect_ri.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="144" selection-start-column="144" selection-end-column="144" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/images/avatars/self_inspect_ri.xml" />
     <entry file="file://E:/Programs/Steam/steamapps/common/Don't Starve Together/mods/LR/images/saveslot_portraits/ri.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -588,42 +509,17 @@
     <entry file="file://$PROJECT_DIR$/LR/images/inventoryimages/llorar_flower.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/LR/images/avatars/avatar_ri.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LR/images/avatars/self_inspect_ri.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LR/images/avatars/self_inspect_llorar.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/images/avatars/avatar_ri.png" />
+    <entry file="file://$PROJECT_DIR$/LR/images/avatars/self_inspect_ri.png" />
+    <entry file="file://$PROJECT_DIR$/LR/images/avatars/self_inspect_llorar.png" />
     <entry file="file://$PROJECT_DIR$/LR/images/avatars/avatar_ghost_ri.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/LR/bigportraits/llorar.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/LR/scripts/prefabs/llorar_none.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Programs/Steam/steamapps/common/Don't Starve Together/data/databundles/scripts/stategraphs/SGwilson.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LR/scripts/stategraphs/SGwilson.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="3853" column="33" selection-start-line="3853" selection-start-column="18" selection-end-line="3853" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/scripts/prefabs/llorar_none.lua" />
+    <entry file="file://E:/Programs/Steam/steamapps/common/Don't Starve Together/data/databundles/scripts/stategraphs/SGwilson.lua" />
     <entry file="file://$PROJECT_DIR$/LR/scripts/prefabs/llorar_flower.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
@@ -631,20 +527,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/Programs/Steam/steamapps/common/Don't Starve Together/data/databundles/scripts/prefabs/abigail_flower.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1306">
-          <caret line="320" column="28" selection-start-line="320" selection-start-column="24" selection-end-line="320" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LR/scripts/prefabs/ri_none.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://E:/Programs/Steam/steamapps/common/Don't Starve Together/data/databundles/scripts/prefabs/abigail_flower.lua" />
+    <entry file="file://$PROJECT_DIR$/LR/scripts/prefabs/ri_none.lua" />
     <entry file="file://$PROJECT_DIR$/LR/scripts/speech_ri.lua">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -704,13 +588,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LR/todo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/todo.txt" />
     <entry file="file://$PROJECT_DIR$/LR/scripts/prefabs/llorar.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
@@ -739,12 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LR/description">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="52" column="31" lean-forward="true" selection-start-line="27" selection-end-line="52" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/LR/description" />
   </component>
 </project>
