@@ -3,8 +3,10 @@ local STRINGS = GLOBAL.STRINGS
 
 PrefabFiles = {
 	"llorar",
+    "llorar_none",
 	"llorar_flower",
 	"ri",
+	"ri_none",
 }
 
 Assets = {
@@ -30,7 +32,10 @@ Assets = {
 	
 	Asset( "IMAGE", "images/avatars/avatar_ghost_llorar.tex" ),
     Asset( "ATLAS", "images/avatars/avatar_ghost_llorar.xml" ),
-	
+
+    Asset( "IMAGE", "images/avatars/self_inspect_llorar.tex" ),
+    Asset( "ATLAS", "images/avatars/self_inspect_llorar.xml" ),
+
 	--Asset("SOUNDPACKAGE", "sound/llorar.fev"),
     --Asset("SOUND", "sound/llorar.fsb"),
 	Asset("SOUNDPACKAGE", "sound/wisp.fev"),
@@ -57,6 +62,9 @@ Assets = {
 	
 	Asset( "IMAGE", "images/avatars/avatar_ghost_ri.tex" ),
     Asset( "ATLAS", "images/avatars/avatar_ghost_ri.xml" ),
+
+    Asset( "IMAGE", "images/avatars/self_inspect_ri.tex" ),
+    Asset( "ATLAS", "images/avatars/self_inspect_ri.xml" ),
 	
 	-- other things
 	Asset("IMAGE", "images/inventoryimages/llorar_flower.tex"),   
@@ -75,22 +83,22 @@ RemapSoundEvent( "dontstarve/characters/wisp/talk_LP", "wisp/wisp/talk_LP" )
 -----------------------------------------------
 -- New Crafts!
 
-	local resolvefilepath = GLOBAL.resolvefilepath
-	local TECH = GLOBAL.TECH
-	local RECIPETABS = GLOBAL.RECIPETABS
-	local Recipe = GLOBAL.Recipe
-	local Ingredient = GLOBAL.Ingredient
-	local STRINGS = GLOBAL.STRINGS
-	
-	AddRecipe("llorar_flower",
-		{
-			Ingredient("petals", 6),
-			Ingredient("nightmarefuel", 4)
-		},
-		RECIPETABS.MAGIC, TECH.NONE, nil, nil, nil, nil, 'llorar_flower_owner', "images/inventoryimages/llorar_flower.xml")
+	--local resolvefilepath = GLOBAL.resolvefilepath
+	--local TECH = GLOBAL.TECH
+	--local RECIPETABS = GLOBAL.RECIPETABS
+	--local Recipe = GLOBAL.Recipe
+	--local Ingredient = GLOBAL.Ingredient
+	--local STRINGS = GLOBAL.STRINGS
+
+	--AddRecipe("llorar_flower",
+	--	{
+	--		Ingredient("petals", 6),
+	--		Ingredient("nightmarefuel", 4)
+	--	},
+	--	RECIPETABS.MAGIC, TECH.NONE, nil, nil, nil, nil, 'llorar_flower_owner', "images/inventoryimages/llorar_flower.xml")
 	STRINGS.NAMES.LLORAR_FLOWER = "Flower of Hope"
 	STRINGS.CHARACTERS.GENERIC.DESCRIBE.LLORAR_FLOWER = "Flower of Hope"
-	STRINGS.RECIPE_DESC.LLORAR_FLOWER = "The last hope."
+	--STRINGS.RECIPE_DESC.LLORAR_FLOWER = "The last hope."
 
 ------------------------------------------------
 
@@ -106,23 +114,23 @@ STRINGS.CHARACTER_DESCRIPTIONS.ri = "*She is nocturnal and crepuscular. \n*She h
 STRINGS.CHARACTER_QUOTES.ri = "\"Wow!\""
 
 -- The default responses of examining the character
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.LLORAR = 
-{
-	GENERIC = "It's Llorar.",
-	ATTACKER = "That Llorar looks shifty...",
-	MURDERER = "Murderer!",
-	REVIVER = "Llorar, friend of ghosts.",
-	GHOST = "Llorar could use a heart.",
-}
-
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.RI = 
-{
-	GENERIC = "It's Ri.",
-	ATTACKER = "That Ri looks shifty...",
-	MURDERER = "Murderer!",
-	REVIVER = "Ri, friend of ghosts.",
-	GHOST = "Ri could use a heart.",
-}
+--STRINGS.CHARACTERS.GENERIC.DESCRIBE.LLORAR =
+--{
+--	GENERIC = "It's Llorar.",
+--	ATTACKER = "That Llorar looks shifty...",
+--	MURDERER = "Murderer!",
+--	REVIVER = "Llorar, friend of ghosts.",
+--	GHOST = "Llorar could use a heart.",
+--}
+--
+--STRINGS.CHARACTERS.GENERIC.DESCRIBE.RI =
+--{
+--	GENERIC = "It's Ri.",
+--	ATTACKER = "That Ri looks shifty...",
+--	MURDERER = "Murderer!",
+--	REVIVER = "Ri, friend of ghosts.",
+--	GHOST = "Ri could use a heart.",
+--}
 
 -- The character's name as appears in-game 
 STRINGS.NAMES.LLORAR = "Llorar"
