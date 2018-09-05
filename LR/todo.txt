@@ -1,3 +1,4 @@
+0. fixme: в номере версии последняя позиция - не буква, а число! =) 
 1. отсутствующие файлы (относительно последней версии дст):
 - images\names_llorar.tex, images\names_ri.tex (имя персонажа)
 - bigportraits\llorar_none.tex, bigportraits\llorar_none.xml,
