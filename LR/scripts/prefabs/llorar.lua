@@ -19,7 +19,7 @@ local common_postinit = function(inst)
 
 end
 
-local function onhealthchange(inst)
+local function onhealthchange_llorar(inst)
 
     --local delta = 1
     local cur_health = 1
@@ -58,6 +58,17 @@ local function onhealthchange(inst)
 
 end
 
+local function onseasonchange_llorar(inst, season)
+    local base_hurtrate = inst.components.health.maxhealth / TUNING.FREEZING_KILL_TIME -- 0.9 (wilson = 1.25)
+    if season == SEASONS.WINTER then
+        inst.components.temperature.maxtemp = (25)
+        inst.components.temperature.hurtrate = base_hurtrate * 3
+    else
+        inst.components.temperature.maxtemp = (90)
+        inst.components.temperature.hurtrate = base_hurtrate
+    end
+end
+
 -- This initializes for the host only
 local master_postinit = function(inst)
     -- choose which sounds this character will play
@@ -80,48 +91,18 @@ local master_postinit = function(inst)
     inst:AddTag("ghostlyfriend")
     inst:AddTag("llorar_flower_owner")
 
-    -- Weak to cold / Resistance to warmth ??? --
-    inst.components.temperature.inherentinsulation = -50
-    inst.components.temperature.inherentsummerinsulation = 40
+    TUNING.MY_POSITIVE_INSULATOR = 50
+    TUNING.MY_NEGATIVE_INSULATOR = 10 -- should always be less than 30
+    inst.components.temperature.inherentinsulation = -20
+    local OldGetInsulation = inst.components.temperature.GetInsulation
+    inst.components.temperature.GetInsulation = function(self)
+        local a, b = OldGetInsulation(self)
+        return a - TUNING.MY_NEGATIVE_INSULATOR, b + TUNING.MY_POSITIVE_INSULATOR
+    end
+    onseasonchange_llorar(inst, TheWorld.state.season)
+    inst:WatchWorldState("season", onseasonchange_llorar)
 
-    --if TheWorld.state.iswinter then
-    --    inst.components.temperature.maxtemp = (25)
-    --    inst.components.temperature.hurtrate = (2.5)
-    --end
-    --
-    --inst:WatchWorldState("startwinter", function()
-    --    -- Announce Winter starting, set max temp and damage rate
-    --    if inst.components.talker then
-    --        inst.components.temperature.maxtemp = (25)
-    --        inst.components.temperature.hurtrate = (2.5)
-    --    end
-    --end)
-    --
-    --inst:WatchWorldState("startspring", function()
-    --    -- Announce Winter ending, set max temp and damage rate
-    --    if inst.components.talker then
-    --        inst.components.temperature.maxtemp = (90)
-    --        inst.components.temperature.hurtrate = (1.25)
-    --    end
-    --end)
-    --
-    --inst:WatchWorldState("startsummer", function()
-    --    -- Set max temp and damage rate
-    --    if inst.components.talker then
-    --        inst.components.temperature.maxtemp = (90)
-    --        inst.components.temperature.hurtrate = (1.25)
-    --    end
-    --end)
-    --
-    --inst:WatchWorldState("startautumn", function()
-    --    -- Set max temp and damage rate
-    --    if inst.components.talker then
-    --        inst.components.temperature.maxtemp = (90)
-    --        inst.components.temperature.hurtrate = (1.25)
-    --    end
-    --end)
-
-    inst:ListenForEvent("healthdelta", onhealthchange)
+    inst:ListenForEvent("healthdelta", onhealthchange_llorar)
 
     --inst.llorar_flowers = {}
 

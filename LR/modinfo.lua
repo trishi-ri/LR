@@ -1,6 +1,6 @@
 -- This information tells other players more about the mod
 name = "Llorar & Ri"
-version = "1.15t"
+version = "1.16g"
 description = "He is our Last Hope. She is just a red panda.\n\nVersion: "..version
 author = "Ri-16"
 forumthread = ""
