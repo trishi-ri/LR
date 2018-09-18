@@ -22,7 +22,17 @@ local common_postinit = function(inst)
     inst.MiniMapEntity:SetIcon("ri.tex")
 end
 
+local function setlightforri(inst)
+    local light = inst.entity:AddLight()
+    light:SetIntensity(.3)
+    light:SetRadius(6)
+    light:SetFalloff(1)
+    light:SetColour(0 / 255, 150 / 255, 130 / 255)
+end
+
 local function updatestats(inst)
+
+    setlightforri(inst)
 
     if (TheWorld.state.phase == "day" or TheWorld.state.phase == "caveday") then
 
@@ -84,6 +94,32 @@ end
 --            or (TheWorld:HasTag("cave") and not TheWorld.state.iscaveday))
 --end
 
+
+-- When the character is revived from human
+local function onbecamehuman(inst)
+    -- Set speed when reviving from ghost (optional)
+    inst.components.locomotor:SetExternalSpeedMultiplier(inst, "ri_speed_mod", 1)
+    updatestats(inst)
+end
+
+local function onbecameghost(inst)
+    -- Remove speed modifier when becoming a ghost
+    inst.components.locomotor:RemoveExternalSpeedMultiplier(inst, "ri_speed_mod")
+    updatestats(inst)
+end
+
+-- When loading or spawning the character
+local function onLoad(inst)
+    inst:ListenForEvent("ms_respawnedfromghost", onbecamehuman)
+    inst:ListenForEvent("ms_becameghost", onbecameghost)
+
+    if inst:HasTag("playerghost") then
+        onbecameghost(inst)
+    else
+        onbecamehuman(inst)
+    end
+end
+
 -- This initializes for the server only. Components are added here.
 local master_postinit = function(inst)
 
@@ -99,12 +135,13 @@ local master_postinit = function(inst)
 
     -- inst.components.temperature.inherentinsulation = TUNING.INSULATION_MED
 
-    local light = inst.entity:AddLight()
-    light:SetIntensity(.3)
-    light:SetRadius(6)
-    light:SetFalloff(1)
-    light:Enable(false)
-    light:SetColour(0 / 255, 150 / 255, 130 / 255)
+    --local light = inst.entity:AddLight()
+    --light:SetIntensity(.3)
+    --light:SetRadius(6)
+    --light:SetFalloff(1)
+    --light:Enable(false)
+    --light:SetColour(0 / 255, 150 / 255, 130 / 255)
+    setlightforri(inst)
 
     --inst:ListenForEvent("sanitydelta", onsanitychange)
     --inst:AddComponent("playervision")
@@ -123,6 +160,9 @@ local master_postinit = function(inst)
 
     inst:WatchWorldState("phase", updatestats)
     updatestats(inst)
+
+    inst.OnLoad = onLoad
+    inst.OnNewSpawn = onLoad
 
 end
 

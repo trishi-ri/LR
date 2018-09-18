@@ -69,6 +69,32 @@ local function onseasonchange_llorar(inst, season)
     end
 end
 
+
+-- When the character is revived from human
+local function onbecamehuman(inst)
+    -- Set speed when reviving from ghost (optional)
+    inst.components.locomotor:SetExternalSpeedMultiplier(inst, "ri_speed_mod", 1)
+    onseasonchange_llorar(inst, TheWorld.state.season)
+end
+
+local function onbecameghost(inst)
+    -- Remove speed modifier when becoming a ghost
+    inst.components.locomotor:RemoveExternalSpeedMultiplier(inst, "ri_speed_mod")
+    onseasonchange_llorar(inst, TheWorld.state.season)
+end
+
+-- When loading or spawning the character
+local function onLoad(inst)
+    inst:ListenForEvent("ms_respawnedfromghost", onbecamehuman)
+    inst:ListenForEvent("ms_becameghost", onbecameghost)
+
+    if inst:HasTag("playerghost") then
+        onbecameghost(inst)
+    else
+        onbecamehuman(inst)
+    end
+end
+
 -- This initializes for the host only
 local master_postinit = function(inst)
     -- choose which sounds this character will play
@@ -99,12 +125,15 @@ local master_postinit = function(inst)
         local a, b = OldGetInsulation(self)
         return a - TUNING.MY_NEGATIVE_INSULATOR, b + TUNING.MY_POSITIVE_INSULATOR
     end
+
     onseasonchange_llorar(inst, TheWorld.state.season)
     inst:WatchWorldState("season", onseasonchange_llorar)
 
     inst:ListenForEvent("healthdelta", onhealthchange_llorar)
 
     --inst.llorar_flowers = {}
+    inst.OnLoad = onLoad
+    inst.OnNewSpawn = onLoad
 
 end
 
